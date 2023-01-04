@@ -17,6 +17,6 @@ module.exports = function toReadable (number) {
     } else if (number < 1000 && number[1] < 2) {
       return nums1[(number - (number % 100))/ 100] + ' ' + nums4 + ' ' + nums2[(number % 100) % 10]
     } else if (number < 1000 && number[1] >= 2) {
-      return nums1[(number - (number % 100))/ 100] + ' ' + nums4 + ' ' + nums3[((number % 100) - (number % 10))/10] + ' ' + nums1[number % 10]
+      return nums1[(number - (number % 100))/ 100] + ' ' + nums4 + ' ' + nums2[((number % 100) - (number % 10))/10] + ' ' + nums1[number % 10]
     }
 }
